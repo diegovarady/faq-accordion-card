@@ -3,13 +3,36 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
-body {
+body {    
     background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
     font-family: 'Kumbh Sans', sans-serif;    
 }
 
+.big-container {  
+    position: relative;  
+    left: 15%;
+    width: 70%;
+    height: 50%;
+    background: white url("images/bg-pattern-desktop.svg") no-repeat;    
+    background-position: initial;
+    border-radius: 25px;
+    display: block;
+}
 
+.image-container {
+    display: inline-block;
+    width: 49%;
+}
 
+.faq-container {
+    display: inline-block;
+    width: 49%;
+}
+
+.woman-mobile {
+    display: none;
+}
 
 
 
