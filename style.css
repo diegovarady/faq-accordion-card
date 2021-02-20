@@ -27,7 +27,7 @@ body {
     box-sizing: border-box;
 }
 
-.image-container {      
+.image-container {   
     display: inline-block;
     width: 50%; 
     height: 100%;   
@@ -38,8 +38,8 @@ body {
 
 .image-container svg {
     position: absolute;
-    left: -13%;
-    top: 37%;
+    left: -130px;
+    top: 210px;
 }
 
 .faq-container {
