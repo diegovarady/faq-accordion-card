@@ -5,7 +5,7 @@
 
 html, body { 
     position: relative;  
-    height: 100%;
+    height: 100%;    
     margin: 0;
 }
 
@@ -15,31 +15,39 @@ body {
     font-family: 'Kumbh Sans', sans-serif;    
 }
 
+.mobile svg {
+    display: none;
+}
+
+.box svg {
+    position: absolute;
+    left: 255px;
+    top: 393px; 
+    z-index: 1;    
+}
+
 .big-container {    
     position: relative;  
     left: 20%;
     width: 60%;
     top: 20%; 
     height: 60%;   
-    background: white url("images/bg-pattern-desktop.svg") no-repeat;    
-    background-position: -575px -290px;
+    background: white url("images/bg-pattern-desktop.svg") no-repeat;  
+    background-position: -600px -300px;
+    background-size: 85%;
     border-radius: 25px;    
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .image-container {   
     display: inline-block;
-    width: 50%; 
+    width: 40%; 
     height: 100%;   
     background: url("images/illustration-woman-online-desktop.svg") no-repeat;
     background-position: -80px 75px;
+    background-size: contain;
     z-index: 1;
-}
-
-.image-container svg {
-    position: absolute;
-    left: -130px;
-    top: 210px;
 }
 
 .faq-container {
@@ -49,13 +57,6 @@ body {
     position: absolute;
     top: 12%;
     box-sizing: border-box;
-}
-
-.woman-desktop {
-    display: block;
-    margin-top: auto;
-    margin-bottom: auto;
-    height: 50%;
 }
 
 .faq-container div {
@@ -104,4 +105,72 @@ footer {
 
 .attribution a { 
     color: hsl(228, 87%, 39%); 
+}
+
+@media only screen and (max-width: 1440px) {
+    .big-container { 
+        left: 15%;
+        width: 75%;        
+        background-position: -520px -295px;
+        background-size: 90%;        
+    }
+
+    .image-container {         
+        width: 50%;        
+        background-position: -90px 45px;        
+    }
+    
+    .box svg {        
+        left: 85px;
+        top: 393px;    
+    }
+    
+    .faq-container {        
+        padding-right: 7em;        
+    }    
+}
+
+@media only screen and (max-width: 375px) {
+
+    .mobile svg {
+        display: block;
+        position: absolute;
+        left: 38px;
+        top: 32px;
+        z-index: 1;    
+    }
+    
+    .big-container {        
+        left: 5%;
+        width: 90%;
+        top: 15%; 
+        height: 60%;        
+        background-position: 45px -135px;
+        background-size: 73%;        
+    }
+    
+    .image-container {   
+        display: none;
+    }
+
+    .box svg {
+        display: none; 
+    }
+
+    .faq-container {
+        display: block;
+        width: 100%;
+        padding: 1em 1em 1em 1em;        
+        top: 20%;       
+    }
+    
+    h1 {
+        text-align: center;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0%;
+        left: 10%;
+    }
 }
